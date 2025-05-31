@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker zone</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="poppins ">
+    <header class=" mx-auto mt-10 md:container">
+
+        <!-- navbar -->
+        <nav class="">
+            <div class="navbar bg-base-100 ">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 font-semibold ">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <a class="font-bold text-xl md:text-4xl ">Bike Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="ml-10">
+                    <a class="btn bg-[#E76F51] text-white font-semibold text-xl py-6 px-8 md:px-11">Login</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner slider -->
+        <div class="carousel w-full mt-12 bg-rose-50 lg:h-[550px]">
+
+            <!-- text-part -->
+
+
+            <!-- slider-1 -->
+            <div id="slide1" class="carousel-item relative w-full ">
+
+                <div class="flex p-7 items-center md:p-24 flex-col lg:flex-row ">
+
+                    <!-- text  -->
+                    <div class="flex-1 ">
+
+                        <h1 class="text-5xl md:text-6xl font-bold mb-7 leading-tight md:w-3/4 ">Ride-on R15 V4 with
+                            Smile</h1>
+                        <p class="font-light text-slate-700 text-base/7 md:w-2/3">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div class="mt-8">
+                            <a
+                                class="btn bg-[#E76F51] text-white font-semibold text-xl py-7 px-7 md:py-8 md:px-10">Purchase</a>
+                        </div>
+                    </div>
+                    <!-- img -->
+                    <div class="flex-1 mt-10 md:mt-1">
+                        <img src="images/slider/bike1.png" class="w-[500px] " />
+                    </div>
+                </div>
+
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider-2 -->
+            <div id="slide2" class="carousel-item relative w-full ">
+
+                <div class="flex items-center p-7 md:p-24 flex-col lg:flex-row ">
+
+                    <!-- text  -->
+                    <div class="flex-1 ">
+
+                        <h1 class="text-5xl md:text-6xl font-bold mb-7 leading-tight md:w-3/4 ">Ride-on R15 V4 with
+                            Smile</h1>
+                        <p class="font-light text-slate-700 text-base/7 md:w-2/3">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div class="mt-8">
+                            <a
+                                class="btn bg-[#E76F51] text-white font-semibold text-xl py-7 px-7 md:py-8 md:px-10">Purchase</a>
+                        </div>
+                    </div>
+                    <!-- img -->
+                    <div class="flex-1 mt-10 md:mt-1">
+                        <img src="images/slider/bike2.png" class="w-[500px] " />
+                    </div>
+                </div>
+
+
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- slider-3 -->
+            <div id="slide3" class="carousel-item relative w-full ">
+
+                <div class="flex items-center p-7 md:p-24 flex-col lg:flex-row ">
+
+                    <!-- text  -->
+                    <div class="flex-1 ">
+
+                        <h1 class="text-5xl md:text-6xl font-bold mb-7 leading-tight md:w-3/4 ">Ride-on R15 V4 with
+                            Smile</h1>
+                        <p class="font-light text-slate-700 text-base/7 md:w-2/3">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div class="mt-8">
+                            <a
+                                class="btn bg-[#E76F51] text-white font-semibold text-xl py-7 px-7 md:py-8 md:px-10">Purchase</a>
+                        </div>
+                    </div>
+                    <!-- img -->
+                    <div class="flex-1 mt-10 md:mt-1">
+                        <img src="images/slider/bike3.png" class="w-[500px] " />
+                    </div>
+                </div>
+
+
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+                <!-- slider-4 -->
+
+            </div>
+
+    </header>
+
+    <main class=" mx-auto md:container">
+
+        <!-- featured bike section  -->
+        <section class="mt-24 ">
+
+            <div class="text-center items-center mb-10">
+                <h1 class="text-4xl md:text-5xl font-semibold mb-8">Featured Bikes In This Year</h1>
+                <p class="text-sm text-orange-600 underline underline-offset-8">Best bike collection </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 pt-8 ">
+
+                <div>
+                    <img src="images/others/feature-bike.png" alt="Bike 3"
+                        class="mx-auto md:w-full mx-w-[250px] md:max-w-[280px] lg:max-w-xs mb-10 md:mb-1">
+                </div>
+                <div>
+                    <img src="images/others/feature-bike.png" alt="Bike 3"
+                        class="mx-auto md:w-full mx-w-[250px] md:max-w-[280px] lg:max-w-xs mb-10 md:mb-1">
+                </div>
+                <div>
+                    <img src="images/others/feature-bike.png" alt="Bike 3"
+                        class="mx-auto md:w-full mx-w-[250px] md:max-w-[280px] lg:max-w-xs mb-10 md:mb-1">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- latest news section -->
+        <section class="mx-auto md:container mt-24 mb-28">
+
+            <div>
+
+                <h1 class="text-center text-5xl font-semibold">latest News</h1>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14 ">
+                    <!-- card-1 -->
+                    <div class="card bg-base-100 mx-auto w-96 shadow-sm mb-7 md:mb-4">
+                        <figure>
+                            <img src="images/others/latest1.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl mt-2 mb-3">Ducati XDIAVEL S-73</h2>
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <div class="card-actions mt-4">
+                                <button class="btn bg-[#E76F51] mt-3 text-white font-medium md:py-6 md:px-7">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card bg-base-100 w-96 mx-auto shadow-sm mb-7 md:mb-4">
+                        <figure>
+                            <img src="images/others/latest2.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl mt-2 mb-3">Motorcycles & Scooters</h2>
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <div class="card-actions mt-4">
+                                <button
+                                    class="btn border-2 text-[#E76F51] border-[#E76F51] mt-3 font-medium md:py-6 md:px-7 ">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-3 -->
+                    <div class="card bg-base-100 w-96 mx-auto shadow-sm ">
+                        <figure>
+                            <img src="images/others/latest3.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl mt-2 mb-3">2021 Honda CBR500R</h2>
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <div class="card-actions mt-4">
+                                <button
+                                    class="btn border-2 text-[#E76F51] border-[#E76F51] mt-3 font-medium md:py-6 md:px-7 ">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- happy client section  -->
+        <section class="mx-auto max-w-[1150px] mb-28">
+
+            <div>
+                <h1 class="text-center text-5xl font-semibold mb-12">Happy <span class="text-orange-500">Clients
+                        says</span></h1>
+
+                <!-- card section  -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 ">
+
+                    <!-- card-1 -->
+                    <div class="shadow-md border-[1px] border-gray-200 w-[400px] mx-auto lg:w-auto rounded-md ">
+
+                        <div class="flex justify-center p-10">
+                            <div>
+                                <div class="w-32 rounded-full mb-6 mx-auto">
+                                    <img src="images/others/user-1.png" />
+                                </div>
+                                <p class="text-base/6 text-gray-500 mb-5 text-center">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                                <div class="grid grid-cols-5 mx-auto w-3/4 ">
+                                    <!-- star icons -->
+                                    <div class="w-7 "><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-half-stroke-solid.svg" alt=""></div>
+
+                                </div>
+                                <h3 class="mt-6 text-center font-semibold text-blue-500">Regina Miles</h3>
+                                <h3 class="mt-6 text-center font-semibold ">Banker</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- card-2 -->
+                    <div class="shadow-md border-[1px] border-gray-200 w-[400px] mx-auto lg:w-auto rounded-md ">
+
+                        <div class="flex justify-center p-10">
+                            <div>
+                                <div class="w-32 rounded-full mb-6 mx-auto">
+                                    <img src="images/others/user-2.png" />
+                                </div>
+                                <p class="text-base/6 text-gray-500 mb-5 text-center">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                                <div class="grid grid-cols-5 mx-auto w-3/4 ">
+                                    <!-- star icons -->
+                                    <div class="w-7 "><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-half-stroke-solid.svg" alt=""></div>
+
+                                </div>
+                                <h3 class="mt-6 text-center font-semibold text-blue-500">Regina Miles</h3>
+                                <h3 class="mt-6 text-center font-semibold ">Banker</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- card-3 -->
+                    <div class="shadow-md border-[1px] border-gray-200 w-[400px] mx-auto lg:w-auto rounded-md ">
+
+                        <div class="flex justify-center p-10">
+                            <div>
+                                <div class="w-32 rounded-full mb-6 mx-auto">
+                                    <img src="images/others/user-3.png" />
+                                </div>
+                                <p class="text-base/6 text-gray-500 mb-5 text-center">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                                <div class="grid grid-cols-5 mx-auto w-3/4 ">
+                                    <!-- star icons -->
+                                    <div class="w-7 "><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-solid.svg" alt=""></div>
+                                    <div class="w-7"><img src="images/icons/star-half-stroke-solid.svg" alt=""></div>
+
+                                </div>
+                                <h3 class="mt-6 text-center font-semibold text-blue-500">Regina Miles</h3>
+                                <h3 class="mt-6 text-center font-semibold ">Banker</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- faq section -->
+        <section class="mx-auto max-w-[1150px] mb-28">
+
+            <h1 class="text-center text-4xl md:text-5xl font-semibold mb-12">Frequently Asked <span
+                    class="text-orange-500">Questions</span></h1>
+
+            <!-- faq -->
+            <div class="hero ">
+                <div class="hero-content flex-col lg:flex-row ">
+                    <img src="images/others/faq.png" class="w-full md:w-fit rounded-lg " />
+
+                    <div class="space-y-3 ml-0 mt-5 lg:ml-16">
+                        <div class="collapse collapse-arrow border border-base-300 border-blue-100 p-1 md:p-3">
+                            <input type="radio" name="my-accordion-2" checked="checked" />
+                            <div class="collapse-title font-semibold md:text-xl text-gray-700">What are the most
+                                important things I should know about riding a bike?</div>
+                            <div class="collapse-content text-gray-400 text-base/7 text-sm md:text-base">Safety First!
+                                Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the
+                                mindset of “driving” your bike—not just“riding” your bike. This will help you be a more
+                                focused and legally compliant bike
+                                rider. </div>
+                        </div>
+                        <div class="collapse collapse-arrow border border-base-300 border-blue-100 p-1 md:p-3">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title font-semibold md:text-xl text-gray-700">How can I tell if my
+                                helmet is old and I need a
+                                new one?</div>
+                            <div class="collapse-content text-gray-400 text-base/7 text-sm md:text-base">Click on
+                                "Forgot Password" on the login page and
+                                follow the instructions sent to your email.</div>
+                        </div>
+                        <div class="collapse collapse-arrow border border-base-300 border-blue-100 p-1 md:p-3">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title font-semibold md:text-xl text-gray-700">My bike has been in
+                                storage is it safe to ride?
+                            </div>
+                            <div class="collapse-content text-gray-400 text-base/7 text-sm md:text-base">Go to "My
+                                Account" settings and select "Edit Profile" to make changes.</div>
+                        </div>
+                        <div class="collapse collapse-arrow border border-base-300 border-blue-100 p-1 md:p-3">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title font-semibold md:text-xl text-gray-700">What rules should I
+                                follow when riding my bike?
+                            </div>
+                            <div class="collapse-content text-gray-400 text-base/7 text-sm md:text-base">Click on
+                                "Forgot Password" on the login page and follow the instructions sent to your email.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer section -->
+
+    <footer class="sm:footer-horizontal bg-[#0B0D17] p-8 px-3 md:px-8 lg:p-10 lg:px-56 flex justify-between flex-col md:flex-row items-center">
+
+        <aside class="space-y-5 w-5/6 text-gray-300 pt-3 md:pt-8">
+
+            
+            <ul class="flex gap-6">
+                <li><a href="">Download Now</a></li>
+                <li><a href="">License</a></li>
+                
+            </ul>
+            <ul class="flex flex-wrap gap-6">
+                <li><a href="">About</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+
+            <h2 class="text-gray-400 mt-8">© 2020 bike. All rights reserved</h2>
+
+            
+        </aside>
+        <nav class="mt-10 md:mt-1">
+            <h6 class=" text-xl text-gray-300 font-medium mb-5">Get the App</h6>
+            <div class="grid grid-cols-1 gap-4">
+                <a>
+                    <img class="w-40" src="images/others/android.png" alt="">
+                </a>
+                <a>
+                    <img class="w-40" src="images/others/ios.png" alt="">
+                </a>
+               
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
